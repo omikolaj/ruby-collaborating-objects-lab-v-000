@@ -41,6 +41,7 @@ attr_accessor :name
       @@all.detect {|artist| artist.name == artist_name}
     else
       Artist.new(artist_name)
+      @@all << self
     end
   end
 
